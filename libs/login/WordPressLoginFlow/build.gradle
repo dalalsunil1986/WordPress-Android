@@ -46,7 +46,7 @@ dependencies {
 
     // Share FluxC version from host project if defined, otherwise fallback to default
     if (project.hasProperty("fluxCVersion")) {
-        implementation("com.github.wordpress-mobile.WordPress-FluxC-Android:fluxc:$fluxCVersion") {
+        implementation("com.github.jd-alexander.WordPress-FluxC-Android:fluxc:$fluxCVersion") {
             exclude group: "com.android.support"
             exclude group: "org.wordpress", module: "utils"
         }
